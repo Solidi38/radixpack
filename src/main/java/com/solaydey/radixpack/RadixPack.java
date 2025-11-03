@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.solaydey.radixpack.item.ModItems;
+
 public class RadixPack implements ModInitializer {
 	public static final String MOD_ID = "radixpack";
 
@@ -19,6 +21,7 @@ public class RadixPack implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("RadixPack is initializing!");
+		ModItems.registerModItems();
 	}
 }
